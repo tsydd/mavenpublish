@@ -8,6 +8,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
+            version "$version$maven_version_suffix"
 
             artifact sourceJar {
                 classifier "sources"
